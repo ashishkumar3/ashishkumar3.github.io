@@ -1,8 +1,6 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	min-width: 500px;
-	height: 100%;
 	animation: myanimation 10s infinite;
 	text-shadow: 1px 1px 4px gray;
 	color: white;
@@ -14,11 +12,10 @@ html, body{
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	width: 35%;
 	text-align: center;
 	color: white;
 	font-family: 'Raleway', sans-serif;
-	padding-top: 60px;
+	width: 40%;
 }
 
 .name{
@@ -36,8 +33,7 @@ html, body{
 	padding: 10px;
 	margin: 0;
 	font-size: 65px;
-	transition: all 1s ease-in-out; /**/
-	/*transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);*/
+	transition: all 1s ease-in-out;
 }
 
 a{
@@ -61,7 +57,7 @@ a{
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
-  .left, .main, .right {
+  .name, .work, .social, .center_div__content {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 
