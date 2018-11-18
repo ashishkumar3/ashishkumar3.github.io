@@ -2,7 +2,7 @@ html, body{
 	margin: 0;
 	padding: 0;
 	animation: myanimation 10s infinite;
-	text-shadow: 2px 2px 4px purple;
+	text-shadow: 2px 2px 4px gray;
 	color: white;
 }
 
