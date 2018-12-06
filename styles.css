@@ -47,11 +47,11 @@ a{
 }
 
 @keyframes myanimation {
-  0% {background-color: #9D5D9F;}
-  25%{background-color:#EA739C;}
-  50%{background-color:#EC748A;}
-  75% {background-color: #975C9A;}
-  100% {background-color: rgb(159, 83, 161);}
+  0% {background-color: rgb(133, 10, 138);} /*9D5D9F*/
+  25%{background-color:rgb(34, 29, 61);} /*#EA739C;*/
+  50%{background-color:rgb(6, 20, 49);} /*#EC748A;*/
+  75% {background-color: rgb(61, 14, 63);} /*975C9A*/
+  100% {background-color: rgb(94, 23, 97);} /*rgb(159, 83, 161)*/
 }
 
 
