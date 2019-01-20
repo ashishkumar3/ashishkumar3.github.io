@@ -1,75 +1,67 @@
-html, body{
-	margin: 0;
-	padding: 0;
-	animation: myanimation 10s infinite;
-	text-shadow: 2px 2px 4px gray;
-	color: white;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  animation: myanimation 10s infinite;
+  text-shadow: 2px 2px 4px gray;
+  color: white;
 }
 
-.center_div__content{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	width: 40%;
+.center_div {
+  display: flex;
+  height: 100vh;
 }
 
-.name{
-	font-size: 120px;
-	font-weight: 800;
-	line-height: 0.9;
-	word-spacing: 0;
+.center_div__content {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
 
-.work{
-	font-size: 20px;
+.name {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 0.9;
+  word-spacing: 0;
 }
 
-.social{
-	padding: 10px;
-	margin: 0;
-	font-size: 65px;
-	transition: all 1s ease-in-out;
+.work {
+  font-size: 20px;
 }
 
-a{
-	color: white;
-	border-bottom: none;
-	text-decoration: none;
+.social {
+  padding: 10px;
+  margin: 0;
+  font-size: 65px;
+  transition: all 1s ease-in-out;
 }
 
-.social a:hover{
-	transform: scale(1.2);
+a {
+  color: white;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.social a:hover {
+  transform: scale(1.2);
 }
 
 @keyframes myanimation {
-  0% {background-color: rgb(119, 6, 122);} /*9D5D9F*/
-  25%{background-color:rgb(34, 29, 61);} /*#EA739C;*/
-  50%{background-color:rgb(6, 20, 49);} /*#EC748A;*/
-  75% {background-color: rgb(61, 14, 63);} /*975C9A*/
-  100% {background-color: rgb(94, 23, 97);} /*rgb(159, 83, 161)*/
-}
-
-
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px) {
-  .name, .work, .social, .center_div__content {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-
-  .name{
-  	font-size: 85px;
-  }
-
-  .work{
-  	font-size: 14px;
-  }
-
-  .social{
-  	font-size: 85px;
-  }
+  0% {
+    background-color: rgb(119, 6, 122);
+  } /*9D5D9F*/
+  25% {
+    background-color: rgb(34, 29, 61);
+  } /*#EA739C;*/
+  50% {
+    background-color: rgb(6, 20, 49);
+  } /*#EC748A;*/
+  75% {
+    background-color: rgb(61, 14, 63);
+  } /*975C9A*/
+  100% {
+    background-color: rgb(94, 23, 97);
+  } /*rgb(159, 83, 161)*/
 }
