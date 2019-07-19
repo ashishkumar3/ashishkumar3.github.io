@@ -1,9 +1,8 @@
 const mic = document.querySelector(".voice");
 
-const themes = ["dark mode", "light mode"];
+const themes = ["dark theme", "light theme"];
 
 mic.addEventListener("click", () => {
-  console.log("coice");
   recognition.start();
 });
 
@@ -21,15 +20,13 @@ recognition.onresult = function(event) {
 
   const transcript = event.results[current][0].transcript;
 
-  if (transcript.includes("dark mode")) {
+  if (transcript.includes("dark theme")) {
     document.body.classList.remove("light-theme");
     document.body.classList.add("dark-theme");
   }
 
-  if (transcript.includes("light mode")) {
+  if (transcript.includes("light theme")) {
     document.body.classList.remove("dark-theme");
     document.body.classList.add("light-theme");
   }
-
-  //console.log(transcript);
 };
