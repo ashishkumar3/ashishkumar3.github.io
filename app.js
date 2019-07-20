@@ -20,13 +20,29 @@ recognition.onresult = function(event) {
 
   const transcript = event.results[current][0].transcript;
 
+  const speech = new SpeechSynthesisUtterance();
+
+  speech.volume = 1;
+  speech.rate = 0.8;
+  speech.pitch = 1;
+  console.log(speech);
+
   if (transcript.includes("dark theme")) {
     document.body.classList.remove("light-theme");
+    document.body.classList.remove("night-fade");
     document.body.classList.add("dark-theme");
+    speech.text = "Dark theme activated";
+  } else if (transcript.includes("light theme")) {
+    document.body.classList.remove("dark-theme");
+    document.body.classList.remove("night-fade");
+    document.body.classList.add("light-theme");
+    speech.text = "Light theme activated";
+  } else if (transcript.includes("night")) {
+    document.body.classList.remove("dark-theme");
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("night-fade");
+    speech.text = "Noght fade theme activated";
   }
 
-  if (transcript.includes("light theme")) {
-    document.body.classList.remove("dark-theme");
-    document.body.classList.add("light-theme");
-  }
+  window.speechSynthesis.speak(speech);
 };
